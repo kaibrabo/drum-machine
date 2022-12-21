@@ -1,5 +1,4 @@
-console.log('fired');
-
+// select elements
 const Q = document.getElementById('q-btn');
 const W = document.getElementById('w-btn');
 const E = document.getElementById('e-btn');
@@ -10,6 +9,12 @@ const Z = document.getElementById('z-btn');
 const X = document.getElementById('x-btn');
 const C = document.getElementById('c-btn');
 
+// set keys to elements
+addEventListener('keydown', (event) => {
+    playSound(event.key.toUpperCase());
+});
+
+// play sounds
 function playSound(s) {
     const audio = document.getElementById(s);
     audio.play();
