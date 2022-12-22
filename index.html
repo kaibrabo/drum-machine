@@ -10,34 +10,43 @@
 </head>
 <body>
     <div id="drum-machine">
-        <div class="drum-pad" id="q-btn" onclick="playSound('Q')">Q
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip Heater1" id="Q" name="Heater1"></audio>
+        <div class="row">
+
+            <div class="drum-pad" id="q-btn" onclick="playSound('Q')">Q
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip Heater1" id="Q" name="Heater1"></audio>
+            </div>
+            <div class="drum-pad" id="w-btn" onclick="playSound('W')">W
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip" id="W" name="Heater2"></audio>
+            </div>
+            <div class="drum-pad" id="e-btn" onclick="playSound('E')">E
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" class="clip" id="E" name="Heater3"></audio>
+            </div>
         </div>
-        <div class="drum-pad" id="w-btn" onclick="playSound('W')">W
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip" id="W" name="Heater2"></audio>
+        <div class="row">
+            <div class="drum-pad" id="a-btn" onclick="playSound('A')">A
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" class="clip" id="A" name="Heater4"></audio>
+            </div>
+
+            <div class="drum-pad" id="s-btn" onclick="playSound('S')">S
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" class="clip" id="S" name="Heater6"></audio>
+            </div>
+            <div class="drum-pad" id="d-btn" onclick="playSound('D')">D
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" class="clip" id="D" name="Dsc-Oh"></audio>
+            </div>
         </div>
-        <div class="drum-pad" id="e-btn" onclick="playSound('E')">E
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" class="clip" id="E" name="Heater3"></audio>
-        </div>
-        <div class="drum-pad" id="a-btn" onclick="playSound('A')">A
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" class="clip" id="A" name="Heater4"></audio>
-        </div>
-        <div class="drum-pad" id="s-btn" onclick="playSound('S')">S
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" class="clip" id="S" name="Heater6"></audio>
-        </div>
-        <div class="drum-pad" id="d-btn" onclick="playSound('D')">D
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" class="clip" id="D" name="Dsc-Oh"></audio>
-        </div>
-        <div class="drum-pad" id="z-btn" onclick="playSound('Z')">Z
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" class="clip" id="Z" name="Kick-'n-Hat"></audio>
-        </div>
-        <div class="drum-pad" id="x-btn" onclick="playSound('X')">X
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip" id="X" name="Kick-1"></audio>
-        </div>
-        <div class="drum-pad" id="c-btn" onclick="playSound('C')">C
-            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" class="clip" id="C" name="Cev-H2"></audio>
+        <div class="row">
+            <div class="drum-pad" id="z-btn" onclick="playSound('Z')">Z
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" class="clip" id="Z" name="Kick-'n-Hat"></audio>
+            </div>
+            <div class="drum-pad" id="x-btn" onclick="playSound('X')">X
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip" id="X" name="Kick-1"></audio>
+            </div>
+            <div class="drum-pad" id="c-btn" onclick="playSound('C')">C
+                <audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" class="clip" id="C" name="Cev-H2"></audio>
+            </div>
         </div>
         
+        <p id="displayText">Sound:</p>
         <div id="display"></div>
     </div>        
 
